@@ -1,0 +1,14 @@
+local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+	
+	ESP.Players = false
+	ESP.Boxes = false
+	ESP.Names = true
+	ESP:Toggle(true)
+
+ESP:AddObjectListener(Workspace.CurrentMap.Chapter1.Utilities,{
+		Name = "Blue Key",
+		CustomName = "Blue Key",
+		Color = Color3.fromRGB(0, 17, 255),
+		IsEnabled = "BlueKey",
+	})
+	ESP.BlueKey = true
